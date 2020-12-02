@@ -50,24 +50,13 @@ func main() {
 				maxRep, _ := strconv.Atoi(splits2[0])
 				letter := strings.Split(splits2[1], ":")[0]
 				password := splits2[2]
-				fmt.Println(line)
-				fmt.Println(minRep)
-				fmt.Println(maxRep)
-				fmt.Println(letter)
-				fmt.Println(password)
 				isOk := checkPassword(minRep, maxRep, letter, password)
 				if isOk {
-					fmt.Println("Password", password, "is good!")
 					goodPasswords++
-				} else {
-					fmt.Println("Password", password, "is broken!")
 				}
 				isOk2 := checkPassword2(minRep, maxRep, letter, password)
 				if isOk2 {
-					fmt.Println("Password", password, "is good!")
 					goodPasswords2++
-				} else {
-					fmt.Println("Password", password, "is broken!")
 				}
 			}
 		} else {
