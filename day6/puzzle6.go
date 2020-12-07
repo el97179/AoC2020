@@ -14,7 +14,6 @@ func readInput(filename string) map[int][]string {
 	}
 	defer file.Close()
 
-	// var allAnswers [][]string
 	allAnswers := make(map[int][]string, 0)
 	groupAnswers := make([]string, 0)
 	personAnswer := ""
